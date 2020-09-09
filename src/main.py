@@ -1,11 +1,7 @@
-from fibo import fibonacci,init_fibo
+from fibo import fibonacci
 
-#x = input('Input the value of x:')
-#y = input('Input the value of y:')
-#n = input('Input the value of n:')
-
-
+x = 0.3
+y = 0.8
 n = 8
 
-
-print(init_fibo(n))
+print(fibonacci(n))
