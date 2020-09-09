@@ -4,17 +4,15 @@ from functions import func
 #x = 0.3
 #y = 0.8
 #n = 8
-x = input('Type value of x: ')
-y = input('Type value of y: ')
-n = input('Type value of n: ')
+x = float(input('Type value of x: '))
+y = float(input('Type value of y: '))
+n = int(input('Type value of n: '))
 
 fibo_sequence = fibonacci(n)
 
 i = [y - x ,]
 i.append((fibo_sequence[-2]/fibo_sequence[-1]) * i[0])
 
-print(i)
-print(i[1])
 u = x + i[1]
 v = y - i[1]
 
@@ -49,11 +47,10 @@ while(True):
             '\033[33m' + f'u = {u}' + ' \033[0;0m',
             '\033[34m' + f'u = {u}' + ' \033[0;0m', 
             '\033[35m' + f'v = {v}' + ' \033[0;0m',
-            '\033[41m' + f'k = {k}' + ' \033[0;0m',
-            '\033[42m' + f'f(u) = {fu}' + ' \033[0;0m',
-            '\033[44m' + f'f(v) = {fv}' + ' \033[0;0m')
+            f'k = {k}',
+            f'f(u) = {fu}',
+            f'f(v) = {fv}')
     
-
     
     if ((k == n-2)and (u > v)):
         xs = u
