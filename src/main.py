@@ -1,12 +1,12 @@
 from fibo import fibonacci
 from functions import func
 
-#x = 0.3
-#y = 0.8
-#n = 8
-x = float(input('Type value of x: '))
-y = float(input('Type value of y: '))
-n = int(input('Type value of n: '))
+x = 0.3
+y = 0.8
+n = 8
+#x = float(input('Type value of x: '))
+#y = float(input('Type value of y: '))
+#n = int(input('Type value of n: '))
 
 fibo_sequence = fibonacci(n)
 
